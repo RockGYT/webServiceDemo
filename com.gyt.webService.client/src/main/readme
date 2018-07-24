@@ -1,0 +1,22 @@
+1、cxf2.2.3客户端动态调用，不支持jdk1.7;
+2、本demo使用的cxf版本为 3.1.6，spring版本为 4.1.9.RELEASE；
+
+3、WebService - import org.apache.axis.client.Call; import org.apache.axis.client.Service;找不到；
+    这两个类是axis1中的，在axis2中没有！！！
+
+    AXIS1 依赖的jar包：
+        axis.jar
+        commons-discovery-0.2.jar
+        commons-logging.jar
+        jaxrpc.jar
+        saaj.jar
+        wsdl4j.jar
+
+4、需要身份验证的，要在CXF服务端配置拦截器，拦截器需要继承AbstractPhaseInterceptor；
+
+
+
+
+
+
+
